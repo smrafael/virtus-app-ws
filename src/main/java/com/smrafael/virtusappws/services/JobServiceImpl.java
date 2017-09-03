@@ -10,10 +10,14 @@ import com.smrafael.virtusappws.models.Job;
 @Service
 public class JobServiceImpl implements JobService {
 	
-	private Job[] jobs = {new Job("Job 1", "Job description 1", "req1; req2; req3"), 
-			new Job("Job 2", "Job description 2", "req1; req2; req3"), 
-			new Job("Job 3", "Job description 3", "req1; req2; req3"),
-			new Job("Job 4", "Job description 4", "req1; req2; req3")};
+	private Job[] jobs = {new Job("Desenvolvedor Java", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+				+ "Quisque tristique enim lobortis neque semper suscipit.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."), 
+			new Job("Analista Java", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+					+ "Quisque tristique enim lobortis neque semper suscipit.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."), 
+			new Job("Arquiteto", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+					+ "Quisque tristique enim lobortis neque semper suscipit.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
+			new Job("Testador", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+					+ "Quisque tristique enim lobortis neque semper suscipit.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")};
 
 	@Override
 	public List<Job> getAll() {
