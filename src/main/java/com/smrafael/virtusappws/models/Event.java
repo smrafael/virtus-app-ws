@@ -2,10 +2,14 @@ package com.smrafael.virtusappws.models;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 public class Event {
 	
 	private String title;
 	private String description;
+	
+	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date date;
 	private String imageUrl;
 	

@@ -24,13 +24,13 @@ public class EventServiceImpl implements EventService {
 				+ "Fusce hendrerit lacinia metus vel scelerisque.", Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant()),
 				"https://icon-icons.com/icons2/906/PNG/512/computing-code_icon-icons.com_70226.png");
 		
-		localDate.minusDays(1);
+		localDate = localDate.minusDays(1);
 		Event event2 = new Event("Super evento sem imagem", "orem ipsum dolor sit amet, consectetur adipiscing elit. "
 				+ "Quisque tristique enim lobortis neque semper suscipit. Mauris non ipsum eu massa ultrices dictum et sit amet est. "
 				+ "Fusce hendrerit lacinia metus vel scelerisque.", Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant()),
 				null);
 		
-		localDate.minusDays(1);
+		localDate = localDate.minusDays(1);
 		Event event3 = new Event("Outro evento", "orem ipsum dolor sit amet, consectetur adipiscing elit. "
 				+ "Quisque tristique enim lobortis neque semper suscipit. Mauris non ipsum eu massa ultrices dictum et sit amet est. "
 				+ "Fusce hendrerit lacinia metus vel scelerisque.", Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant()),
